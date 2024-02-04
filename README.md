@@ -8,3 +8,4 @@
 ```javascript
 console.log('Travel website')
 ```
+Now our website has table with deals.
