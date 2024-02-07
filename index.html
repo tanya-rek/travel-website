@@ -25,15 +25,15 @@
       <h1 class="header-title-h1">International Travel Company</h1>
     </header>
     <nav>
-        <ul>
-          <li><a href="./pages/about.html">About</a></li>
-          <li><a href="./pages/book-tours.html">Book tours</a></li>
-          <li><a href="#deals">Cheap deals</a></li>
-          <li><a href="./pages/blog.html">Blog</a></li>
-          <li><a href="#message">Leave a message</a></li>
-          <li><a href="./pages/register.html">Sign up</a></li>
-          <li><a href="./pages/login.html">Login</a></li>
-        </ul>
+      <ul>
+        <li><a href="./pages/about.html">About</a></li>
+        <li><a href="./pages/book-tours.html">Book tours</a></li>
+        <li><a href="#deals">Cheap deals</a></li>
+        <li><a href="./pages/blog.html">Blog</a></li>
+        <li><a href="#message">Leave a message</a></li>
+        <li><a href="./pages/register.html">Sign up</a></li>
+        <li><a href="./pages/login.html">Login</a></li>
+      </ul>
     </nav>
     <main>
       <div class="container">
@@ -71,80 +71,84 @@
             </p>
             <button>Book now</button>
           </section>
-        <section id="deals">
-          <h2>Last minute deals for 2024</h2>
-          <div class="deals-select-div">
-            <label for="deals">Choose a destination:</label>
-            <select name="deals" id="deals-filter">
-              <option value="all">All destinations:</option>
-              <option value="iceland">Iceland</option>
-              <option value="costa-rica">Costa Rica</option>
-              <option value="ecuador">Ecuador</option>
-              <option value="ireland">Ireland</option>
-            </select>
-            <button>Filter</button>
-          </div>
-          <table>
-            <thead>
-              <tr>
-                <th>Departing</th>
-                <th>Destination</th>
-                <th>Days</th>
-                <th>Price before</th>
-                <th>From USD</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>Sat 10 Feb</th>
-                <th>Costa Rica</th>
-                <th>6</th>
-                <th>
-                  <del>$1599<sup>99</sup></del>
-                </th>
-                <th>$1099<sup>99</sup></th>
-              </tr>
-              <tr>
-                <th>Sat 11 May</th>
-                <th>Ireland</th>
-                <th>10</th>
-                <th>
-                  <del>$2099<sup>99</sup></del>
-                </th>
-                <th>$1699<sup>99</sup></th>
-              </tr>
-            </tbody>
-          </table>
+          <section id="deals">
+            <h2>Last minute deals for 2024</h2>
+            <div class="deals-select-div">
+              <label for="deals-filter">Choose a destination:</label>
+              <select name="deals" id="deals-filter">
+                <option value="all">All destinations:</option>
+                <option value="iceland">Iceland</option>
+                <option value="costa-rica">Costa Rica</option>
+                <option value="ecuador">Ecuador</option>
+                <option value="ireland">Ireland</option>
+              </select>
+              <button>Filter</button>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Departing</th>
+                  <th>Destination</th>
+                  <th>Days</th>
+                  <th>Price before</th>
+                  <th>From USD</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Sat 10 Feb</th>
+                  <th>Costa Rica</th>
+                  <th>6</th>
+                  <th>
+                    <del>$1599<sup>99</sup></del>
+                  </th>
+                  <th>$1099<sup>99</sup></th>
+                </tr>
+                <tr>
+                  <th>Sat 11 May</th>
+                  <th>Ireland</th>
+                  <th>10</th>
+                  <th>
+                    <del>$2099<sup>99</sup></del>
+                  </th>
+                  <th>$1699<sup>99</sup></th>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section id="message">
+            <h2>Leave a message</h2>
+            <form action="submit" method="post">
+              <fieldset>
+                <legend>Your question</legend>
+                <label for="name">Name:</label>
+                <br />
+                <input type="text" id="name" name="name" required />
+                <br />
+                <label for="email">Email:</label>
+                <br />
+                <input type="email" id="email" name="email" required />
+                <br />
+                <label for="question">Your question:</label>
+                <br />
+                <textarea
+                  id="question"
+                  cols="20"
+                  rows="5"
+                  name="question"
+                ></textarea>
+                <br />
+                <button type="submit">Submit</button>
+              </fieldset>
+            </form>
+          </section>
         </section>
-        <section id="message">
-          <h2>Leave a message</h2>
-          <form action="submit" method="post">
-            <fieldset>
-              <legend>Your question</legend>
-              <label for="name">Name:</label>
-              <br />
-              <input type="text" id="name" name="name" required />
-              <br />
-              <label for="email">Email:</label>
-              <br />
-              <input type="email" id="email" name="email" required />
-              <br />
-              <label for="question">Your question:</label>
-              <br />
-              <textarea
-                id="question"
-                cols="20"
-                rows="5"
-                name="question"
-              ></textarea>
-              <br />
-              <button type="submit">Submit</button>
-            </fieldset>
-          </form>
-        </section>
+      </div>
     </main>
     <footer>
-      <p class="footer-paragraph-copyright">Copyright© 2024 International Travel Company. All Rights Reserved</p>
+      <p class="footer-paragraph-copyright">
+        Copyright© 2024 International Travel Company. All Rights Reserved
+      </p>
       <small>Last updated 30.01.2024</small>
       <p>Follow us</p>
       <ul>
