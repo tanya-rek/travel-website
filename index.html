@@ -7,20 +7,15 @@
     <meta name="keywords" content="travel, trip, website, cheap trips" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>International Travel Company</title>
-    <style>
-      table,
-      th,
-      td {
-        border: 1px solid;
-      }
-    </style>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <script src="js/script.js" type="text/javascript"></script>
   </head>
   <body>
     <header>
       <figure>
         <img
-          src="images/travel-logo.png"
+          src="./images/travel-logo.png"
           alt="travel company logo"
           width="150"
           height="110"
@@ -32,284 +27,122 @@
     <hr />
     <nav>
       <ul>
-        <li><a href="#about">About company</a></li>
-        <li><a href="#book-tours">Book tours</a></li>
+        <li><a href="./pages/about.html">About</a></li>
+        <li><a href="./pages/book-tours.html">Book tours</a></li>
         <li><a href="#deals">Cheap deals</a></li>
-        <li><a href="#our-services">Our services</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#">Contacts</a></li>
-        <li><a href="#locations">Our locations</a></li>
+        <li><a href="./pages/blog.html">Blog</a></li>
         <li><a href="#message">Leave a message</a></li>
         <li><a href="./pages/register.html">Sign up</a></li>
         <li><a href="./pages/login.html">Login</a></li>
       </ul>
     </nav>
     <main>
-      <section id="promotional-video">
-        <video width="1000" height="690" controls>
-          <source src="video/ireland-cliffs.mp4" type="video/mp4" />
-          Your browser does not support it
-        </video>
-        <br />
-        <iframe
-          width="320"
-          height="240"
-          src="https://www.youtube.com/embed/xuP4g7IDgDM"
-          allowfullscreen
-        ></iframe>
-      </section>
-      <section id="about">
-        <h2>About</h2>
-        <p>
-          Travel agency was found in <time datetime="2010">2010</time> by
-          <em>Ms. Holy Moly</em> as part of
-          <abbr title="Moly Family Travel Business, Inc.">MFTB, Inc.</abbr>
-          <strong>We will be happy to make your vacation unforgettable!</strong>
-          We will provide the best service and prices.
-        </p>
-        <h3>Our goals:</h3>
-        <ol>
-          <li>Give people freedom to travel.</li>
-          <li>Make travelling easy and relaxing.</li>
-        </ol>
-      </section>
-      <section id="book-tours">
-        <h2>Available tours</h2>
-        <section>
-          <h3>Iceland</h3>
-          <img
-            src="images/iceland-lake.jpg"
-            alt="iceland tour"
-            width="1000"
-            height="700"
-          />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
-            sint quos officiis? Magnam, ipsam aperiam incidunt cupiditate quas
-            tempore, dolores in voluptates quibusdam odit voluptas. Corporis
-            ullam ipsam eligendi quas.
-          </p>
-          <button>Book now</button>
-        </section>
-        <section>
-          <h3>Ireland</h3>
-          <img
-            src="images/ireland-sheepes.jpg"
-            alt="irelend tour"
-            width="1000"
-            height="700"
-          />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
-            sint quos officiis? Magnam, ipsam aperiam incidunt cupiditate quas
-            tempore, dolores in voluptates quibusdam odit voluptas. Corporis
-            ullam ipsam eligendi quas.
-          </p>
-          <button>Book now</button>
-        </section>
-        <section>
-          <h3>Ecuador</h3>
-          <img
-            src="images/ecuador-chimborazo.jpg"
-            alt="ecuador tour"
-            width="1000"
-            height="700"
-          />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
-            sint quos officiis? Magnam, ipsam aperiam incidunt cupiditate quas
-            tempore, dolores in voluptates quibusdam odit voluptas. Corporis
-            ullam ipsam eligendi quas.
-          </p>
-          <button>Book now</button>
-        </section>
-        <section>
-          <h3>Costa Rica</h3>
-          <img
-            src="images/costa-rica.jpg"
-            alt="costa rica tour"
-            width="1000"
-            height="700"
-          />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
-            sint quos officiis? Magnam, ipsam aperiam incidunt cupiditate quas
-            tempore, dolores in voluptates quibusdam odit voluptas. Corporis
-            ullam ipsam eligendi quas.
-          </p>
-          <button>Book now</button>
-        </section>
-      </section>
-      <section id="deals">
-        <h2>Last minute deals for 2024</h2>
-        <div>
-          <label for="deals">Choose a destination:</label>
-          <select name="deals" id="deals-filter">
-            <option value="all">All destinations:</option>
-            <option value="iceland">Iceland</option>
-            <option value="costa-rica">Costa Rica</option>
-            <option value="ecuador">Ecuador</option>
-            <option value="ireland">Ireland</option>
-          </select>
-          <button>Filter</button>
-        </div>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Departing</th>
-              <th>Destination</th>
-              <th>Days</th>
-              <th>Price before</th>
-              <th>From USD</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>Sat 10 Feb</th>
-              <th>Costa Rica</th>
-              <th>6</th>
-              <th>
-                <del>$1599<sup>99</sup></del>
-              </th>
-              <th>$1099<sup>99</sup></th>
-            </tr>
-            <tr>
-              <th>Sat 11 May</th>
-              <th>Ireland</th>
-              <th>10</th>
-              <th>
-                <del>$2099<sup>99</sup></del>
-              </th>
-              <th>$1699<sup>99</sup></th>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section id="our-services">
-        <h2>Our other services</h2>
-        <dl>
-          <dt>Itineries for 5 days:</dt>
-          <dd>Ireland</dd>
-          <dd>Ecuador</dd>
-          <dt>Itineries for 7 days:</dt>
-          <dd>Iceland</dd>
-          <dd>Costa Rica</dd>
-        </dl>
-      </section>
-      <section id="blog">
-        <h2>Blog posts</h2>
-        <article>
-          <h3>Hidden gems of Ecuador</h3>
-          <img
-            src="images/ecuador-overlook.jpg"
-            alt="ecuador gems"
-            width="800"
-            height="420"
-          />
-          <p>
-            As a British broadcaster, biologist, natural historian and author
-            <cite>David Attenborough</cite> (who has travelled to at least 333
-            filming locations around the world) said about the travelling,
-            <q
-              >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      <div class="container">
+        <section id="book-tours">
+          <h2>Available tours</h2>
+          <section>
+            <h3>Iceland</h3>
+            <img
+              src="images/iceland-lake.jpg"
+              alt="iceland tour"
+              width="1000"
+              height="700"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Inventore sint quos officiis? Magnam, ipsam aperiam incidunt
               cupiditate quas tempore, dolores in voluptates quibusdam odit
-              voluptas. Corporis ullam ipsam eligendi quas.</q
-            >
-          </p>
-          <address>
-            Written by <a href="mailto:tonja.moss@example.com">Tonja Moss</a>
-          </address>
-
-          <button>Read more</button>
-        </article>
-        <article>
-          <h3>5-day itinerary for Ireland</h3>
-          <img
-            src="images/ireland-lighthouse.jpg"
-            alt="ecuador itinerary"
-            width="800"
-            height="420"
-          />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
-            sint quos officiis? Magnam, ipsam aperiam incidunt cupiditate quas
-            tempore, dolores in voluptates quibusdam odit voluptas. Corporis
-            ullam ipsam eligendi quas.
-          </p>
-          <address>
-            Written by <a href="mailto:mikekohls@example.com">Mike Kohls</a>
-          </address>
-          <button>Read more</button>
-        </article>
-      </section>
-      <section id="locations">
-        <h2>Locations</h2>
-        <details>
-          <summary>
-            Washington, DC - 326 East Capitol St NE, Washington, DC 20003
-          </summary>
-          <p>Our office is located 5 minutes from the Capitol.</p>
-        </details>
-        <details>
-          <summary>Baltimore - 450 Mott St, Baltimore, MD 21202</summary>
-          <p>Our office is located in the Old Town of Baltimore.</p>
-        </details>
-      </section>
-      <section id="message">
-        <h2>Leave a message</h2>
-        <form action="submit" method="post">
-          <fieldset>
-            <legend>Your question</legend>
-            <label for="name">Name:</label>
-            <br />
-            <input type="text" id="name" name="name" required />
-            <br />
-            <label for="email">Email:</label>
-            <br />
-            <input type="email" id="email" name="email" required />
-            <br />
-            <label for="question">Your question:</label>
-            <br />
-            <textarea
-              id="question"
-              cols="20"
-              rows="5"
-              name="question"
-            ></textarea>
-            <br />
-            <button type="submit">Submit</button>
-          </fieldset>
-        </form>
-      </section>
-      <section>
-        <h2>How would you rate our work?</h2>
-        <ul>
-          <li>
-            I had an amazing experience with your travel agency
-            <meter value="30" min="0" max="50"></meter>
-          </li>
-          <li>
-            I had a good experience, but I would change some things
-            <meter value="15" min="0" max="50"></meter>
-          </li>
-          <li>
-            I would not use your services again
-            <meter value="5" min="0" max="50"></meter>
-          </li>
-        </ul>
-      </section>
-      <aside id="aside">
-        <h2>Mark Twain about travelling</h2>
-        <blockquote
-          cite="https://www.davestravelpages.com/famous-travel-quotes/"
-        >
-          Travel is fatal to prejudice, bigotry, and narrow-mindedness, and many
-          of our people need it sorely on these accounts. Broad, wholesome,
-          charitable views of men and things cannot be acquired by vegetating in
-          one little corner of the earth all one's lifetime.
-        </blockquote>
-      </aside>
+              voluptas. Corporis ullam ipsam eligendi quas.
+            </p>
+            <button>Book now</button>
+          </section>
+          <section>
+            <h3>Ireland</h3>
+            <img
+              src="images/ireland-sheepes.jpg"
+              alt="irelend tour"
+              width="1000"
+              height="700"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Inventore sint quos officiis? Magnam, ipsam aperiam incidunt
+              cupiditate quas tempore, dolores in voluptates quibusdam odit
+              voluptas. Corporis ullam ipsam eligendi quas.
+            </p>
+            <button>Book now</button>
+          </section>
+        <section id="deals">
+          <h2>Last minute deals for 2024</h2>
+          <div class="deals-select-div">
+            <label for="deals">Choose a destination:</label>
+            <select name="deals" id="deals-filter">
+              <option value="all">All destinations:</option>
+              <option value="iceland">Iceland</option>
+              <option value="costa-rica">Costa Rica</option>
+              <option value="ecuador">Ecuador</option>
+              <option value="ireland">Ireland</option>
+            </select>
+            <button>Filter</button>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Departing</th>
+                <th>Destination</th>
+                <th>Days</th>
+                <th>Price before</th>
+                <th>From USD</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Sat 10 Feb</th>
+                <th>Costa Rica</th>
+                <th>6</th>
+                <th>
+                  <del>$1599<sup>99</sup></del>
+                </th>
+                <th>$1099<sup>99</sup></th>
+              </tr>
+              <tr>
+                <th>Sat 11 May</th>
+                <th>Ireland</th>
+                <th>10</th>
+                <th>
+                  <del>$2099<sup>99</sup></del>
+                </th>
+                <th>$1699<sup>99</sup></th>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="message">
+          <h2>Leave a message</h2>
+          <form action="submit" method="post">
+            <fieldset>
+              <legend>Your question</legend>
+              <label for="name">Name:</label>
+              <br />
+              <input type="text" id="name" name="name" required />
+              <br />
+              <label for="email">Email:</label>
+              <br />
+              <input type="email" id="email" name="email" required />
+              <br />
+              <label for="question">Your question:</label>
+              <br />
+              <textarea
+                id="question"
+                cols="20"
+                rows="5"
+                name="question"
+              ></textarea>
+              <br />
+              <button type="submit">Submit</button>
+            </fieldset>
+          </form>
+        </section>
     </main>
     <footer>
       <p>Copyright© 2024 International Travel Company. All Rights Reserved</p>
