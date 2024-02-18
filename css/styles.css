@@ -1,8 +1,8 @@
 /* Common styles */
 
 main {
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 40px;
+  padding-bottom: 10px;
 }
 
 .container,
@@ -13,20 +13,31 @@ main {
 
 .container {
   display: block;
-  margin-top: 20px;
 }
 
 header {
+  width: 98%;
   height: fit-content;
+  padding: 1%;
+  display: inline-block;
+  align-items: stretch;
+}
+
+figure {
+  width: 140px;
+  height: 100px;
+}
+
+figure > img {
+  width: 115px;
+  height: 80px;
 }
 
 h1 {
   margin-top: 0;
-}
-
-.footer-paragraph-copyright {
-  font-size: 15px;
-  margin-top: 0;
+  height: 100%;
+  color: rgba(0, 61, 0, 0.779);
+  float: inline-end;
 }
 
 .header-title-h1 {
@@ -34,11 +45,29 @@ h1 {
   margin-bottom: 0%;
 }
 
+.footer {
+  width: 98%;
+  height: fit-content;
+  padding: 1%;
+  display: inline-block;
+  align-items: stretch;
+}
+
+.footer-paragraph-copyright {
+  font-size: 15px;
+  margin-top: 0;
+}
+
+.footer-social__selector {
+  float: inline-end;
+}
+
 /* Nav */
 
 nav {
   background-color: rgb(255, 187, 85, 0.2);
   margin-top: auto;
+  padding-left: 25vw;
 }
 
 ul {
@@ -64,10 +93,86 @@ li a {
   display: inline-block;
 }
 
+.deals-selector {
+  margin: 10px;
+}
+
+/* Section Book Tours */
+
+input,
+textarea {
+  display: block;
+  margin: 5px;
+}
+
+#booktours {
+  height: fit-content;
+  display: inline-flex;
+}
+
+.section-tours-img {
+  width: 700px;
+  height: 360px;
+}
+
+.book-tours-left-section {
+  height: fit-content;
+  width: 35vw;
+  float: inline-start;
+  padding: 10px 0 5px 10px;
+  margin-right: 10vw;
+}
+
+.book-tours-right-section {
+  height: fit-content;
+  width: 35vw;
+  float: inline-start;
+  padding: 10px 0 5px 10px;
+  margin-left: 10px;
+}
+
+.book-tours-btn {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  border-radius: 500px;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 140px;
+  text-transform: uppercase;
+  white-space: normal;
+  text-align: center;
+  padding: 10px 7px 9px;
+  color: #fff;
+  background-color: #15883e;
+  height: 40px;
+}
+
+/* Section Deals */
+
+#deals {
+  display: inline-block;
+}
+
+/* Table with deals*/
+table,
+th,
+td {
+  border: 1px green solid;
+}
+
+table {
+  width: 92vw;
+}
+
+del {
+  color: rgb(202, 8, 8);
+}
+
 /* Colors */
 header,
 footer {
-  background: linear-gradient(rgb(58, 210, 240), rgb(38, 109, 38));
+  background: linear-gradient(rgb(58, 210, 240), rgb(161, 252, 161));
 }
 
 main {
@@ -81,11 +186,4 @@ button {
 
 h2 {
   color: rgb(33, 74, 38, 60);
-}
-
-/* Table with deals*/
-table,
-th,
-td {
-  border: 1px green solid;
 }

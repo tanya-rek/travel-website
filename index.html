@@ -14,13 +14,10 @@
   <body>
     <header class="header">
       <figure>
-        <img
-          src="./images/travel-logo.png"
-          alt="travel company logo"
-          width="150"
-          height="110"
-        />
-        <figcaption>International Travel Company logo</figcaption>
+        <img src="./images/travel-logo.png" alt="travel company logo" />
+        <figcaption>
+          <small>International Travel Company logo</small>
+        </figcaption>
       </figure>
       <h1 class="header-title-h1">International Travel Company</h1>
     </header>
@@ -39,13 +36,12 @@
       <div class="container">
         <section id="book-tours">
           <h2>Available tours</h2>
-          <section>
+          <section class="book-tours-left-section">
             <h3>Iceland</h3>
             <img
               src="./images/iceland-lake.jpg"
               alt="iceland tour"
-              width="1000"
-              height="700"
+              class="section-tours-img"
             />
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -53,15 +49,14 @@
               cupiditate quas tempore, dolores in voluptates quibusdam odit
               voluptas. Corporis ullam ipsam eligendi quas.
             </p>
-            <button>Book now</button>
+            <button class="book-tours-btn">Book now</button>
           </section>
-          <section>
+          <section class="book-tours-right-section">
             <h3>Ireland</h3>
             <img
               src="./images/ireland-sheepes.jpg"
               alt="ireland tour"
-              width="1000"
-              height="700"
+              class="section-tours-img"
             />
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -69,18 +64,18 @@
               cupiditate quas tempore, dolores in voluptates quibusdam odit
               voluptas. Corporis ullam ipsam eligendi quas.
             </p>
-            <button>Book now</button>
+            <button class="book-tours-btn">Book now</button>
           </section>
           <section id="deals">
             <h2>Last minute deals for 2024</h2>
-            <div class="deals-select-div">
+            <div class="deals-selector">
               <label for="deals-filter">Choose a destination:</label>
               <select name="deals" id="deals-filter">
                 <option value="all">All destinations:</option>
-                <option value="iceland">Iceland</option>
-                <option value="costa-rica">Costa Rica</option>
-                <option value="ecuador">Ecuador</option>
-                <option value="ireland">Ireland</option>
+                <option value="Iceland">Iceland</option>
+                <option value="Costa-Rica">Costa Rica</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Ireland">Ireland</option>
               </select>
               <button>Filter</button>
             </div>
@@ -119,18 +114,13 @@
           <section id="message">
             <h2>Leave a message</h2>
             <form action="submit" method="post">
-              <fieldset>
+              <fieldset class="book-tours__form">
                 <legend>Your question</legend>
                 <label for="name">Name:</label>
-                <br />
                 <input type="text" id="name" name="name" required />
-                <br />
                 <label for="email">Email:</label>
-                <br />
                 <input type="email" id="email" name="email" required />
-                <br />
                 <label for="question">Your question:</label>
-                <br />
                 <textarea
                   id="question"
                   cols="20"
@@ -145,17 +135,19 @@
         </section>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <p class="footer-paragraph-copyright">
         Copyright© 2024 International Travel Company. All Rights Reserved
       </p>
       <small>Last updated 30.01.2024</small>
-      <p>Follow us</p>
-      <ul>
-        <li><a href="https://www.facebook.com/">Facebook</a></li>
-        <li><a href="https://www.instagram.com/">Instagram</a></li>
-        <li><a href="https://www.youtube.com/">Youtube</a></li>
-      </ul>
+      <div class="footer-social__selector">
+        <p>Follow us</p>
+        <ul>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://www.instagram.com/">Instagram</a></li>
+          <li><a href="https://www.youtube.com/">Youtube</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
