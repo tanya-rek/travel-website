@@ -15,6 +15,12 @@ main {
   display: block;
 }
 
+button,
+input,
+textarea {
+  cursor: pointer;
+}
+
 header {
   width: 98%;
   height: fit-content;
@@ -186,4 +192,28 @@ button {
 
 h2 {
   color: rgb(33, 74, 38, 60);
+}
+
+/* CSS Selectors */
+
+input:valid {
+  border: 2px solid green;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+.book-tours-btn:hover {
+  box-shadow: 0 13px 17px 0 rgba(2, 255, 124, 0.3),
+    0 18px 52px 0 rgba(2, 255, 124, 0.19);
+}
+
+p::first-letter {
+  font-size: 20px;
+}
+
+p::selection {
+  color: white;
+  background-color: rgb(61, 59, 59);
 }

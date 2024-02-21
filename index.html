@@ -23,13 +23,25 @@
     </header>
     <nav>
       <ul>
-        <li><a href="./pages/about.html">About</a></li>
-        <li><a href="./pages/book-tours.html">Book tours</a></li>
+        <li>
+          <a href="./pages/about.html" rel="noopener noreferrer">About</a>
+        </li>
+        <li>
+          <a href="./pages/book-tours.html" rel="noopener noreferrer"
+            >Book tours</a
+          >
+        </li>
         <li><a href="#deals">Cheap deals</a></li>
-        <li><a href="./pages/blog.html">Blog</a></li>
-        <li><a href="#message">Leave a message</a></li>
-        <li><a href="./pages/register.html">Sign up</a></li>
-        <li><a href="./pages/login.html">Login</a></li>
+        <li><a href="./pages/blog.html" rel="noopener noreferrer">Blog</a></li>
+        <li>
+          <a href="#message">Leave a message</a>
+        </li>
+        <li>
+          <a href="./pages/register.html" rel="noopener noreferrer">Sign up</a>
+        </li>
+        <li>
+          <a href="./pages/login.html" rel="noopener noreferrer">Login</a>
+        </li>
       </ul>
     </nav>
     <main>
@@ -40,7 +52,7 @@
             <h3>Iceland</h3>
             <img
               src="./images/iceland-lake.jpg"
-              alt="iceland tour"
+              alt="Iceland tour"
               class="section-tours-img"
             />
             <p>
@@ -55,7 +67,7 @@
             <h3>Ireland</h3>
             <img
               src="./images/ireland-sheepes.jpg"
-              alt="ireland tour"
+              alt="Ireland tour"
               class="section-tours-img"
             />
             <p>
@@ -113,13 +125,25 @@
           </section>
           <section id="message">
             <h2>Leave a message</h2>
-            <form action="submit" method="post">
+            <form action="" method="GET">
               <fieldset class="book-tours__form">
                 <legend>Your question</legend>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your email"
+                  required
+                />
                 <label for="question">Your question:</label>
                 <textarea
                   id="question"
